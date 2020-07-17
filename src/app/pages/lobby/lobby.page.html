@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      AppLogin
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+  <ion-img src="../assets/icon/favicon.png" class="logo"></ion-img>
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/registration']" expand="block" color="primary">Cadastrar</ion-button>
+
+        <span class="divider line one-line">ou </span>
+
+        <span class="already">Já é um usuário?</span>
+
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">Entrar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
